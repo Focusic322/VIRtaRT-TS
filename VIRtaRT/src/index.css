@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+.pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .custom-pagination .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: #363636;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-pagination .swiper-pagination-bullet-active {
+    background-color: #232f66;
+    width: 16px;
+    height: 16px;
+  }
+
+  .custom-pagination__testimonials .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background-color: #363636;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-pagination__testimonials .swiper-pagination-bullet-active {
+    background-color: #232f66;
+  }
+
+  @media (max-width: 450px) {
+    .custom-pagination .swiper-pagination-bullet,
+    .custom-pagination__testimonials .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  
+  .swiper-container {
+    width: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .swiper-slide > div {
+    width: 370px;
+  }
+
+  .swiper-slide > div {
+    margin: auto;
+  }
+  
+  
+
+  @media screen and (max-width: 840px) {
+    .swiper-slide > div {
+      width: 330px;
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    .swiper-slide > div {
+      width: 210px;
+    }
+  }
